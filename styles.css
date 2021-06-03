@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -124,4 +126,26 @@
 .btn-sm {
     padding: .1rem 1rem;
     vertical-align: middle;
+}
+
+.section {
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.secLeft {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 6rem;
+}
+
+.sectionSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
