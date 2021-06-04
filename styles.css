@@ -20,7 +20,7 @@
 
 .navbar {
     display: flex;
-    background-color: rgb(93, 69, 150);
+    background-color: rgb(74, 76, 122);
     justify-content: center;
     align-items: center;
     position: sticky;
@@ -30,14 +30,15 @@
 }
 
 .nav-list {
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
 }
 
 .nav-list li {
     list-style: none;
-    padding: 3%;
+    padding: 2.5% 3%;
+    font-size: 1.1rem;
 }
 
 .nav-list li a {
@@ -50,7 +51,7 @@
 }
 
 .rightNav {
-    width: 50%;
+    width: 30%;
     text-align: right;
     padding: 0 2rem;
 }
@@ -81,7 +82,7 @@
     max-width: 50%;
     margin: auto;
     height: 75%;
-    letter-spacing: .1rem;
+    /* letter-spacing: .1rem; */
 }
 
 .firstHalf {
@@ -92,7 +93,7 @@
 }
 
 .secondHalf {
-    width: 30%;
+    width: 55%;
 }
 
 .secondHalf img {
@@ -110,6 +111,7 @@
 
 .text-small {
     font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .btn {
@@ -121,6 +123,7 @@
     border-radius: 8px;
     cursor: pointer;
     background: none;
+    font-size: 1.2rem;
 }
 
 .btn-sm {
@@ -128,8 +131,18 @@
     vertical-align: middle;
 }
 
+.btn-dark {
+    color: black;
+    border: 2px solid grey;
+}
+
+.btn:hover {
+    background-color: rgb(23, 21, 21);
+    color: white;
+}
+
 .section {
-    height: 30rem;
+    height: 25rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -148,4 +161,55 @@
 
 .sectionSubTag {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img {
+    width: 14rem;
+    border: 5px solid rgb(74, 76, 122);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.contact {
+    height: 84vh;
+    background-color: rgb(245, 241, 236);
+}
+
+.text-contact {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form {
+    max-width: 40%;
+    margin: auto;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 1rem;
+    padding: .3rem 1rem;
+    border: 2px solid grey;
+    border-radius: .4rem;
+    margin: .5rem 0;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(74, 76, 122);
+    color: white;
+}
+
+@media only screen and (max-width: 1140px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+    }
 }
