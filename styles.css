@@ -205,11 +205,41 @@
     color: white;
 }
 
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 4%;
+    top: 20%;
+}
+
+.line {
+    width: 2rem;
+    height: .2rem;
+    margin: .3rem;
+    background-color: white;
+}
+
 @media only screen and (max-width: 1140px) {
     .nav-list {
         flex-direction: column;
     }
     .navbar {
         flex-direction: column;
+    }
+    .rightNav {
+        text-align: center;
+    }
+    #search {
+        width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+    .hide-nav {
+        height: 3rem;
+    }
+    .visibility-class {
+        opacity: 0;
     }
 }
