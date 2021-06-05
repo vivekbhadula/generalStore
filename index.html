@@ -109,11 +109,13 @@
     <section class="contact">
         <h2 class="text-contact">Contact Us</h2>
         <div class="form">
-            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
-            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
-            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your Email-id">
-            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Enter Text"></textarea>
-            <button class="btn btn-sm btn-dark">Submit</button>
+            <form method="POST" action="formHandler.php">
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+                <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
+                <input class="form-input" type="email" name="email" id="email" placeholder="Enter your Email-id" required>
+                <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Enter Text" required></textarea>
+                <button class="btn btn-sm btn-dark">Submit</button>
+            </form>   
         </div>
     </section>
 
