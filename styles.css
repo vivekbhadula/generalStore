@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .logo{
     width: 20%;
     display: flex;
@@ -142,7 +146,6 @@
 }
 
 .section {
-    height: 25rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -171,7 +174,6 @@
 }
 
 .contact {
-    height: 84vh;
     background-color: rgb(245, 241, 236);
 }
 
@@ -210,7 +212,7 @@
     position: absolute;
     cursor: pointer;
     right: 4%;
-    top: 20%;
+    top: 0;
 }
 
 .line {
@@ -221,14 +223,30 @@
 }
 
 @media only screen and (max-width: 1140px) {
+    *{
+        font-size: 85%;
+    }
     .nav-list {
         flex-direction: column;
     }
+    .logo {
+        width: 65%;
+    }
+    .nav-list li {
+        font-size: 1.6rem;
+    }
     .navbar {
+        height: 60vh;
         flex-direction: column;
+        transition: all 0.4s ease-out;
     }
     .rightNav {
         text-align: center;
+    }
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 80%;
+        height: 85%;
     }
     #search {
         width: 100%;
@@ -241,5 +259,24 @@
     }
     .visibility-class {
         opacity: 0;
+    }
+    .section {
+        flex-direction: column-reverse;
+    }
+    .text-big {
+        text-align: center;
+    }
+    .text-small {
+        text-align: center;
+    }
+    .buttons {
+        text-align: center;
+    }
+    .paras {
+        padding: 2rem 0;
+    }
+    .form {
+        max-width: 80%;
+        margin-left: 5%;
     }
 }
